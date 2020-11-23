@@ -1,0 +1,56 @@
+/* this is a comment  */
+
+/* Tag selector */
+p {
+    color:red;  
+    font-style: italic; 
+    margin:4%;
+}
+
+body{
+    background-color:wheat;
+    margin: 25%;
+}
+
+/* Class selectors  */
+
+.myLiClass{
+    color: blue;
+    font-size: 20px;
+}
+
+.pClass{
+    color: darkgreen;
+}
+
+
+/* ID selectors */
+#myUniqueId{
+    background-color: cornflowerblue;
+}
+
+/* Advanced CSS selector */
+/* Combining selectors */
+
+/* A E --> Ant E element that is a descendent of A at any depth */
+
+table p {
+    color: violet;
+}
+
+ul > li {
+    color: crimson;
+}
+
+.myLiClass + li {
+    color: lawngreen;
+}
+
+h5 + h6 {
+    color:tomato;
+}
+
+/* psuedo-class selectors */
+a:hover{
+    color: darkorange;
+}
