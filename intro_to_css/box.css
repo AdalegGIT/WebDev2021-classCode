@@ -1,0 +1,25 @@
+div{
+   color: burlywood; 
+   width: 450px;
+   height: 35px;
+   background-color: black;
+   padding: 10px;
+   border: 20px solid gray;
+   margin:10px;
+}
+
+* {
+    margin: 0%;
+}
+#imgDiv{
+    height: 250px;
+}
+
+img {
+    padding: 35px;
+    margin-left: 35px;
+    border: 5px dotted green;
+    background-color: azure;
+    border-radius: 157px;
+
+}

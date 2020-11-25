@@ -34,7 +34,7 @@ body{
 
 /* A E --> Ant E element that is a descendent of A at any depth */
 
-table p {
+#myTable p {
     color: violet;
 }
 
@@ -53,4 +53,16 @@ h5 + h6 {
 /* psuedo-class selectors */
 a:hover{
     color: darkorange;
+    text-transform: uppercase;
+    text-decoration: wavy;
+}
+
+ul :nth-child(2n) {
+    color: white;
+    background-color: black;
+  }
+
+#myNewList :nth-child(2n+1){
+    color: black;
+    background-color: rgb(241, 137, 10);
 }
