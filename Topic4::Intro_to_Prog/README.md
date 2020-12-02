@@ -80,9 +80,7 @@ How we represent truthiness in our programs
   * `false`
   * `nil` also evaluates to **false** in Ruby
 
-### Symbols
-  * Symbols represent names without values
-  * They're often used to refer to other named objects
+
 
 ## Variables
 Allow us to give data a name and remember its value for use later in our program
@@ -93,6 +91,13 @@ Allow us to give data a name and remember its value for use later in our program
 ### Constants
   * Should be defined in ALL_CAPS
   * Issues a warning if they are changed
+  
+## Converting between data types
+  * to_s: to string
+  * to_i: to integer
+  * to_f: to float
+  * !! ahead of a value converts to boolean
+
 
 ## Flow Control structures
 As our programs execute, we often need to control the flow of execution. This means making decisions about which path to take, as well as repeating a block of code a fixed number of times.
