@@ -158,12 +158,12 @@
 #looping
 #while
 
-# counter = 1
+counter = 1
 
-# while counter <= 100
-#     puts "Hello World !! #{counter}"
-#     counter += 1
-# end
+while counter <= 100
+    puts "Hello World !! #{counter}"
+    counter += 1
+end
 
 # x = 0
 
@@ -185,6 +185,3 @@
 100.times do 
     puts "blah blah"
 end
-
-
-
