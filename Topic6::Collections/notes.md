@@ -63,7 +63,7 @@ my_array = []
 You can include values as you create an array too:
 
 ```ruby
-breakfast = ['pancakes', 'bacon', 'eggs']
+breakfast = ['pancakes', 'banana', 'eggs']
 ```
 
 ## Adding To An Array
