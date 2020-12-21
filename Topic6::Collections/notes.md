@@ -1,18 +1,6 @@
 # Collections and Iteration
 
-# Agenda
 
-### Introduction                  <small>(5 min)</small>
-
-### Arrays                        <small>(30 min)</small>
-
-### Hashes                        <small>(20 min)</small>
-
-### Hashes vs. Arrays             <small>(10 min)</small>
-
-### Iteration                     <small>(40 min)</small>
-
-### Further Resources and Wrap Up <small>(5 min)</small>
 
 # Introduction
 
