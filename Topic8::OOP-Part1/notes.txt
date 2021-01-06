@@ -1,0 +1,51 @@
+Class
+
+- Blueprint for making instances
+
+
+What Are Objects?
+An object is an entity that has states and behaviors.
+or
+Instance of a Class
+
+
+
+Principles of object-oriented programming
+These are the four main principles of the object-oriented programming paradigm.
+Understanding them is essential to becoming a successful programmer.
+
+Encapsulation 
+--------------
+Encapsulation is a process of wrapping code and data together into a single unit.
+Control over the data:
+Data hiding: 
+We can make a class read-only or write-only
+
+Inheritance
+------------
+Inheritance is a mechanism in which one object acquires all the states and behaviors of a parent object.
+Code reuse: the child class inherits all instance members of the parent class.
+You have more flexibility to change code: changing code in place is enough.
+You can use polymorphism:
+
+Abstraction
+-----------
+Abstraction is a process of hiding the implementation details and showing only functionality to the user.
+
+
+Polymorphism
+------------
+Polymorphism is the ability of an object to take on many forms.
+
+Method overloading
+If a class has multiple methods that have same name but different parameters, this is known as method overloading.
+
+Method overriding
+If a subclass has the same method as declared in the super class, this is known as method overriding.
+
+
+
+
+Object     |   State                | Behaviour
+-----------+------------------------+------------------------
+Instance   | Instance Variables (@) | Instance Methods (def)
