@@ -1,0 +1,11 @@
+Write a Pizza class
+-states / attributes
+        -slices
+        -toppings
+
+- behaviours
+
+        -bake
+        -cut
+        -eat
+- Think about what kind of attributes (i.e. state) that you will need to implement these behaviours
