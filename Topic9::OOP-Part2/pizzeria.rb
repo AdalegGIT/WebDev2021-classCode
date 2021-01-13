@@ -1,19 +1,20 @@
-require('./pizza')
-
+#require('./pizza')
+require_relative('pizza')
 class Pizzeria
 
     #class variable
     @@all_pizzeria = []
     @@total_sales = 0
     #self
-    def initialize
+    def initialize(name)
+        @name = name
         @is_open = false
         @stock = 0
         @pizza_sales = 0
         @@all_pizzeria << self
     end
      
-    attr_accessor :pizza_sales
+    attr_accessor :pizza_sales, :name , :is_open
 
     #class method
     def self.total_sales
@@ -24,7 +25,20 @@ class Pizzeria
         return @@all_pizzeria.length
     end
 
+    def self.show_all_shops
+        #num = 1
+        @@all_pizzeria.each_with_index do |shop , index|
+            p "----Shop #{ index + 1}----"
+            p "Name :  #{shop.name}"
+            p "# of sales :#{shop.pizza_sales}"
+            p "Open  : #{shop.is_open}"
+            p "*******************"
+            #num +=1
+        end
+    end
+
     def self.local_sales(store)
+        # @pizza_sales
         return store.pizza_sales
     end
 
@@ -76,8 +90,8 @@ class Pizzeria
     end
 end
 
-super_pizza = Pizzeria.new
-awesome_pizza = Pizzeria.new
+super_pizza = Pizzeria.new("super Pizza")
+awesome_pizza = Pizzeria.new("Awesome Pizza")
 
 # p super_pizza
 
@@ -97,23 +111,23 @@ super_pizza.order(['cheese', 'mushrooms'])
 
 # p my_pizza
 
-p super_pizza
+#p super_pizza
 
 awesome_pizza.order(['cheese', 'mushrooms'])
 
-p awesome_pizza
+#p awesome_pizza
 
-p Pizzeria.total_sales
+# p Pizzeria.total_sales
 
-p "how many shops ?"
+# p "how many shops ?"
 
-p Pizzeria.total_shops
+# p Pizzeria.total_shops
 
-p awesome_pizza.total_sales
+# p awesome_pizza.total_sales
 
-p super_pizza.total_sales
+# p super_pizza.total_sales
 
-p Pizzeria.local_sales(super_pizza) #we are invoking a class method
-
+# p Pizzeria.local_sales(super_pizza) #we are invoking a class method
+Pizzeria.show_all_shops
 
 
