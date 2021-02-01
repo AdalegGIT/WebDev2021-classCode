@@ -1,0 +1,32 @@
+DBMS - Dataabase Managemnet System
+
+SQL - Structured Query Language
+
+DDL - Data DEfinition Language
+DML - Data Manipulation Language
+
+DCL - Data Control Language
+TCL - Transaction Control Language
+
+
+--create table query
+CREATE TABLE cars( id INTEGER PRIMARY KEY NOT NULL, name TEXT NOT NULL, make TEXT, year INTEGER);
+--
+INSERT INTO cars(id , name , make , year) VALUES (1,'nissan','pathfinder',2020);
+INSERT INTO cars(id , name ) VALUES (1,'nissan');
+INSERT INTO cars(id , name ) VALUES (2,'tesla');
+INSERT INTO cars(id,name,make,year) VALUES(3,'jaguar','qwerty',2020);
+INSERT INTO cars(id,name,make,year) VALUES(4,'tesla',NULL,NULL);
+INSERT INTO cars(id,name,make,year) VALUES(5,'nissan','rogue',2018);
+INSERT INTO cars(id,name,make,year) VALUES(6,'honda','civic',2015);
+--.headers on
+--.mode column
+SELECT * FROM cars;
+SELECT *  FROM cars where year in (2020,2018);
+SELECT *  FROM cars where year <= 2020 AND year >= 2018;
+SELECT *  FROM cars where year < 2020 AND year > 2018;
+ SELECT *  FROM cars where name like 'ni%';
+ SELECT *  FROM cars where year < 2020 AND year > 2018;
+ SELECT *  FROM cars where name like '%ss%';
+ SELECT COUNT(*)  FROM cars;
+ SELECT DISTINCT(name) from cars;
