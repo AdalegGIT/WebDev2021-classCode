@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="edit.css">
+    <title>Add Film</title>
+</head>
+<body>
+
+<div>
+  <h1>Submit the form to Add new film.</h1>
+  <form action="/createFilm" method="POST">
+    <label for="ftitle">Title</label>
+    <input type="text" id="ftitle" name="title" placeholder="Title" >
+
+    <label for="fcountry">Country</label>
+    <input type="text" id="fcountry" name="country" placeholder="Country">
+
+    <label for="fgenre">Genre</label>
+    <input type="text" id="fgenre" name="genre" placeholder="Genre" >
+
+    <label for="frating">Rating</label>
+    <input type="text" id="frating" name="rating" placeholder="Ratings">
+
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>

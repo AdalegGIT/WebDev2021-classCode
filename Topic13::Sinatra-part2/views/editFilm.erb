@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="edit.css">
+    <title>Edit Film</title>
+</head>
+<body>
+
+<div>
+  <h1>Submit the form to change the information</h1>
+  <form action="/updateFilm" method="POST">
+    <label for="ftitle">Title</label>
+    <input type="text" id="ftitle" name="title" value= "<%= @film.title %>" >
+
+    <label for="fcountry">Country</label>
+    <input type="text" id="fcountry" name="country" value= "<%= @film.country %>">
+
+    <label for="fgenre">Genre</label>
+    <input type="text" id="fgenre" name="genre" value= "<%= @film.genre %>">
+
+    <label for="frating">Rating</label>
+    <input type="text" id="frating" name="rating" value= "<%= @film.rating %>">
+
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
