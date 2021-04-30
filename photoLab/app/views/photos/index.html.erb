@@ -1,0 +1,13 @@
+<%= link_to "Add new photo", new_photo_path %>
+
+<section class="photos">
+  <% @photos.each do |photo| %>
+    <section class="photo">
+      <p> <%= link_to 'View', photo_path(photo) %> <%= link_to 'Edit', edit_photo_path(photo) %> <%= link_to 'Delete', photo_path(photo), method: :delete, data: {confirm: "Are you sure?" } %> </p>
+      <p class="photo-title"> <%= photo.title %> </p>
+      <p class="description"> <%= photo.desc %> </p>
+      <div class="image-frame"><%= link_to image_tag(photo.url), photo_path(photo) %></div>
+      <p> Comments :: <%=photo.comments.count %></p>
+    </section>
+  <% end %>
+</section>
