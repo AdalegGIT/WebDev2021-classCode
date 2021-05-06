@@ -11,4 +11,4 @@ photo2 = Photo.create(title: "JS", url: "https://symbols.getvecta.com/stencil_25
 Comment.create(name: "User1", message:"Great", photo_id: photo1.id )
 
 photo2.comments << Comment.create(name: "User2", message:"Great")
-
+photo2.tags

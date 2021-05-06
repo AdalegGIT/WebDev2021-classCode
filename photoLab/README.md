@@ -14,4 +14,4 @@
 - implement with pictures & comments in Photogur to see how it benefits us when it comes to adding code in the controllers & views
 
 ### Reading the docs
-- [Active Record Associations](http://guides.rubyonrails.org/association_basics.html)
+- [Active Record Associations](https://guides.rubyonrails.org/association_basics.html)

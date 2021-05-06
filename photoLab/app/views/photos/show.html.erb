@@ -5,8 +5,20 @@
   <%= image_tag @photo.url %>
 </section>
 
-<h2>Comments </h2>
 
+<h2>Tags </h2>
+
+<ul>
+ <% @tags.each do |tag|%>
+  <li>
+    <p><%=tag.name %> </p>
+
+  </li>
+ <% end %>
+</ul>
+
+<h2>Comments </h2>
+<p><%=link_to 'Add  Comments' ,new_photo_comment_path(@photo) %></p>
 <ul>
  <% @comments.each do |comment|%>
   <li>
