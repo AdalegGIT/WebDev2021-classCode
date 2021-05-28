@@ -1,8 +1,11 @@
-<h1>Places#index</h1>
-<p>Find me in app/views/places/index.html.erb</p>
+<% if @places.count > 0%>
+        <% @places.each do | place |%>
+            <h3> <%= link_to place.name, place_path(place)%> </h3>
+            <p> <%= place.desc%> </p>
+        <%end%>
+<%else%>
 
+        <p> No places found </p>
+<%end%>
 
-
-Hi <%= current_user.email %>
-
-
+<%= link_to "Add place" , new_place_path%>

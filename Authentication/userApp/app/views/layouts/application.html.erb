@@ -11,6 +11,19 @@
   </head>
 
   <body>
+
+  <header>
+<div style="
+    padding-top: 20%;
+">
+    <% if current_user%>
+        <%=link_to "logout", sessions_path("current"), method: :delete %>
+    <%else%>
+        <%= link_to "Sign up", new_users_path%>
+        <%= link_to "Log in" , new_sessions_path%>
+    <%end%>
+    </div>
+  </header>
     <%= yield %>
   </body>
 </html>
