@@ -130,3 +130,6 @@ let final = points.sort(function(a,b) {
 })
 
 console.log(final)
+hello
+hi
+bye
