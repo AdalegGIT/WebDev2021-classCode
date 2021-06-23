@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.content {
+    margin: 10px;
+    padding: 10px;
+}
+
+.container p {
+    margin-top: 5px;
+    padding: 5px;
+}
+
+.scrollRibbon {
+    position: fixed;
+    top: 0;
+    width: 0%;
+    height: 10px;
+    background-color: tomato;
+}
