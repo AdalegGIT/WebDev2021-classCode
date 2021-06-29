@@ -1,0 +1,86 @@
+export default [
+  {
+    id: 1,
+    first_name: "Jesselyn",
+    last_name: "Roke",
+    email: "jroke0@google.nl",
+    gender: "Female",
+    ip_address: "182.62.225.114",
+  },
+  {
+    id: 2,
+    first_name: "Vivien",
+    last_name: "Biesty",
+    email: "vbiesty1@php.net",
+    gender: "Genderfluid",
+    ip_address: "66.200.57.68",
+  },
+  {
+    id: 3,
+    first_name: "Lurline",
+    last_name: "Mongain",
+    email: "lmongain2@berkeley.edu",
+    gender: "Genderfluid",
+    ip_address: "185.107.101.43",
+  },
+  {
+    id: 4,
+    first_name: "Billie",
+    last_name: "Starmore",
+    email: "bstarmore3@wsj.com",
+    gender: "Agender",
+    ip_address: "115.69.251.162",
+  },
+  {
+    id: 5,
+    first_name: "Major",
+    last_name: "Alven",
+    email: "malven4@1688.com",
+    gender: "Bigender",
+    ip_address: "127.203.12.120",
+  },
+  {
+    id: 6,
+    first_name: "Nomi",
+    last_name: "Marsie",
+    email: "nmarsie5@google.com.br",
+    gender: "Bigender",
+    ip_address: "113.207.159.36",
+  },
+  {
+    id: 7,
+    first_name: "Faustine",
+    last_name: "De Bell",
+    email: "fdebell6@163.com",
+    gender: "Agender",
+    ip_address: "212.179.156.166",
+  },
+  {
+    id: 8,
+    first_name: "Danita",
+    last_name: "MacCallum",
+    email: "dmaccallum7@trellian.com",
+    gender: "Genderqueer",
+    ip_address: "134.55.54.251",
+  },
+  {
+    id: 9,
+    first_name: "Gar",
+    last_name: "Sterricks",
+    email: "gsterricks8@purevolume.com",
+    gender: "Male",
+    ip_address: "218.21.217.209",
+  },
+  {
+    id: 10,
+    first_name: "Reagen",
+    last_name: "Agiolfinger",
+    email: "ragiolfinger9@cam.ac.uk",
+    gender: "Polygender",
+    ip_address: "89.192.159.19",
+  },
+];
+
+export const lengthFinder = (arr) => {
+  return arr.length
+};
