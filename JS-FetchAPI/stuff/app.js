@@ -12,11 +12,11 @@ document.addEventListener("DOMContentLoaded", () => {
     .then((e) => console.log(e))
     .catch((err) => console.log(err));
 
-  fetch("http://www.omdbapi.com/?apikey=dba8c231&s=marvel")
+  fetch("http://www.omdbapi.com/?apikey=apikey&s=marvel")
     .then((e) => e.json())
     .then((e) => console.log("DATA::", e));
 
-  fetch("http://www.omdbapi.com/?apikey=dba8c231&i=tt0372784")
+  fetch("http://www.omdbapi.com/?apikey=apikey&i=tt0372784")
     .then((e) => e.json())
     .then((e) => console.log("MOVIE::", e));
 
